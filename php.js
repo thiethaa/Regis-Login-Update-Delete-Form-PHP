@@ -71,3 +71,13 @@ function openTab(event, activity) {
       }
   }
   button.addEventListener("click",addlistafterclick);
+
+  //delete
+function deleteMe(){
+  let qa = confirm ("Are you sure want to delete your account?");
+  if (qa === true){
+    return true;
+  }else{
+    return false;
+  }
+};

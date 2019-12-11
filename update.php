@@ -67,7 +67,7 @@ require 'header.php';
                         </div>
 
                     <input type="submit" name="update"class="btn2" value="Update"><br>
-                    <input type="submit" name="delete"class="btn3" value="Delete an Account"><br>
+                    <input type="submit" name="delete"class="btn3" value="Delete an Account" onclick="return deleteMe()"><br>
                 </div>
             </form>
         <div>
