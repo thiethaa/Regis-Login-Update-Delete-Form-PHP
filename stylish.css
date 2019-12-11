@@ -366,7 +366,22 @@ p{
 }
 .btn2:hover{
     cursor: pointer;
-    color:black;
+    color:white;
     background-color:rgb(123, 6, 241);
 }  
-
+.btn3{
+    padding:10px;
+    font-size:15px;
+    color:white;
+    border:none;
+    background:rgb(131, 7, 5);
+    border-radius: 5px;
+    width:50%;
+    box-shadow:0px 4px rgb(106, 3, 3);
+    height:35px;
+}
+.btn3:hover{
+    cursor: pointer;
+    color:white;
+    background-color:rgb(248, 49, 45);
+}  

@@ -170,10 +170,18 @@ if(isset($_POST['register'])){
         
             mysqli_query($db,$query);
             //show it to homepage
-            header('location:index.php?message='.urlencode("updating succesfully!"));
+            header('location:index.php?message='.urlencode("Updating Succesfully!"));
             exit;
             } else {
                 $errors[] ="Error during updating!";
         }
     }
+//Delete an Account
+if(isset($_POST['delete'])){
+    $query = "DELETE FROM member WHERE id = $_SESSION[user_id]";
+    mysqli_query($db,$query);
+     
+            header('location:bye.php?message='.urlencode("you are not longer a member, to be a member please register!"));
+            exit;
+}
  ?>

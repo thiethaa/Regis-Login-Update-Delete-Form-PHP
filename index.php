@@ -16,7 +16,6 @@ require 'header.php';
                 <ul> 
                 <li><a href="?logout">Logout</a></li>
                 <li style="font-size:1.2em;"><?php echo '<img style="width:22px;height:20px; border-radius:5px;"src="'.$user["imglink"].'">';?><strong style="color:white;"> Welcome, <?php echo $user['username'];?></strong></li>
-
                 </ul>
             </div>
         </nav>
@@ -36,7 +35,6 @@ require 'header.php';
                 </h3>
             </div>
             <?php endif ?>
-
         <!-- logged users -->
         
             <h1>Hi <strong><?php echo $user['username'];?>,<br><span style="color:rgb(174, 154, 194);">Have a Good Day!</span></h1>

@@ -1,34 +1,3 @@
-//validate form
-let fname = document.getElementsByName('fname').value;
-let lname = document.getElementsByName('lname').value;
-let username = document.getElementsByName('username').value;
-let email = document.getElementsByName ('email').value;
-let password = document.getElementsByName('password').value;
-let cpassword = document.getElementsByName('cpassword').value;
-let dob = document.getElementsByName('dob').value;
-let male= document.getElementById('male').value;
-let female = document.getElementById('female').value;
-let other = document.getElementById('other').value;
-let travel = document.getElementById('travel').value;
-let sport = document.getElementById('sport').value;
-let music = document.getElementById('music').value;
-let address = document.getElementsByName('address').value;
-let city = document.getElementsByName('city').value;
-let country = document.getElementsByName('country').value;
-let phone= document.getElementsByName('phone').value;
-
-function validate(){
-  if(fname == '' || lname == ''|| username ==''|| email==''|| password ==''|| cpassword == ''|| dob==''|| male==''|| female ==''|| other ==''|| travel ==''|| sport ==''|| mucic ==''|| address==''|| city==''|| country ==''|| phone==''){
-    document.getElementById('errorMsg').textContent ='Please Fill Up the Empty Fields!';
-    document.getElementsByTagName('input').style.border ='1px solid red';
-    return false
-  }else{
-    document.getElementsByTagName('input').style.border ='1px solid green';
-    alert('Register has been Success!')
-    return true;
-    
-  }
-}
 //showing display picture
 function PreviewImage() {
   var output = new FileReader();
